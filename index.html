@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta Keywords="About Piyush Dhanawat, Piyush Dhanawat, Piyush, CSE, Computer Science, Engineer, Computer Engineer, Web designer, Web Development, Fullstak web Development, Frontend Web Development, Frontend Web Developer, Web Developer, Fullstack Web Developer, HTML5, HTML, CSS, CSS3, Java Script, JS, React JS, Phython, bootstrap, Vedio Editer, Vedio Editing, Blender, website, Protfolio, Resume, CV">
+    <meta name="robots" content="INDEX, FOLLOW">
+    <meta name="descrption" content="This is the Portfolio & Website of Piyush Dhanawat, which tells about him every thing.">
+    <meta name="author" content="Piyush Dhanawat">
+    <title>Dhanawat</title>
+    <link rel="icon" type="X-icon" href="/img/logo.png">
+    <link rel="stylesheet" href="./css/style.css">
+    <nav>
+        <div id="logo"><img src="img/logo.png" alt="Piyush's Logo"></div>
+        <ul id="navbar">
+            <li><a href="#" class="active"><i class="fa-solid fa-igloo"></i> Home</a></li>
+            <li><a href="./html/aboutme.html" target="_self"><i class="fa-solid fa-address-card"></i> About Me</a></li>
+            <li><a href="./html/myskills.html" target="_self"><i class="fa-brands fa-steam"></i> My Skills</a></li>
+            <li><a href="./html/Hireme.html" target="_self"><i class="fa-brands fa-hire-a-helper"></i> Hire Me</a></li>
+            <li><a href="#" target="_self"><i class="fa-solid fa-message"></i> Contact Me
+            <ul id="contact">
+                <li><a href="#"><i class="fa-solid fa-message"></i> Direct Message</a></li>
+                <li><a href="#"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a></li>
+                <li><a href="#"><i class="fa-brands fa-telegram"></i> Telegram</a></li>
+            </ul></a></li>
+        </ul>
+        <div id="hamburger">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+    </nav>
+</head>
+<body>
+    <section>
+        <div id="myself">
+           <h2>Hello World! I'am PIYUSH DHANAWAT</h2>
+           <h3>Frontend Web Developer & Video Editor</h3>
+           <p>Piyush! Piyush Dhanawat. A Computer Science Engineering Student who is Preparing & Studying for becoming a Fullstack Web Developer & Blender Expert.</p>
+           <ul>
+            <li><a href="https://www.facebook.com/piyush.dhanawat.986" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href="https://www.instagram.com/piyush26102/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a></li>
+            <li><a href="https://twitter.com/dhanawat_piyush?t=972R_7Vrw-jZctUVlvyFAQ&s=09" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/piyush-dhanawat-761579227" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+            <li><a href="mailto:piyush26102@gmail.com"><i class="fa-solid fa-envelope"></i></a></li>
+           </ul>
+           <ul>
+            <li><a href="#"><i class="fa-solid fa-share-from-square"></i>
+            <ul id="sharelist">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul></a></li>
+            <li><a href="https://github.com/Piyush26102?tab=overview&from=2023-05-01&to=2023-05-31" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+           </ul>
+        </div>
+        <div id="piyushimg"><img src="./img/piyush_image.png" alt="Piyush Dhanawat"></div>
+    </section>
+    <footer>
+        <div><Center>All Copyrights are Reserved &#169; PIYUSH DHANAWAT</Center></div>
+      </footer>
+<script>
+    const hamburger = document.getElementById("hamburger");
+const ul = document.getElementById("navbar");
+hamburger.addEventListener('click', ()=>{
+    ul.classList.toggle('ham_active');
+    let ham_child = hamburger.firstElementChild;
+    if(ul.classList.contains('ham_active')){
+        ham_child.classList.replace('fa-bars','fa-xmark');
+    }
+    else {
+        ham_child.classList.replace('fa-xmark','fa-bars');
+    }
+});
+</script>
+<script src="https://kit.fontawesome.com/c7eaf0a1ec.js" crossorigin="anonymous"></script>
+</body>
+</html>

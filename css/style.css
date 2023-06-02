@@ -1,0 +1,197 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+    background-color: rgb(5, 5, 5);
+    padding: 10px;
+    color: rgb(240, 248, 255);
+}
+nav {
+    padding: 10px;
+    width: 100%;
+    background-color: rgb(100, 62, 240);
+    display: flex;
+    justify-content: space-between;
+}
+#logo {
+     width: 16rem;
+     height: 15vh;
+}
+#logo img {
+    width: 100%;
+    height: 100%;
+    image-resolution: 72px;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+}
+nav ul li {
+    padding: 0px 40px;
+}
+ul li a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: black;
+}
+ul li a:hover, .active {
+    color: rgb(240, 248, 255);
+}
+#contact {
+    display: none;
+}
+section {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+section ul {
+    display: flex;
+    list-style: none;
+}
+section ul li {
+    padding: 10px 40px;
+}
+section ul li a {
+    color: rgb(240, 248, 255);
+}
+section h3 {
+    color: rgb(8, 250, 250);
+}
+section ul li a :hover {
+    font-size: 50px;
+}
+#myself {
+    margin: 15% 10%;
+    width: 30%;
+}
+#piyushimg {
+    width: 40%;
+    height: 78vh;
+}
+#piyushimg img {
+    width: 100%;
+    height: 100%;
+}
+#sharelist {
+    display: none;
+}
+@media screen and (min-width:1023px){ 
+    #hamburger {
+        display: none;
+    }
+}
+@media screen and (max-width:1023px){ 
+    nav ul {
+        display: none;
+    }
+    nav ul.ham_active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top:113.2px;
+        left:0;
+        width: 100%;
+        height: 320px;
+        gap: 24px;
+        background-color: rgb(100, 62, 240);
+    }
+    #piyushimg {
+        margin-right: 20px;
+    }
+}
+@media screen and (max-width:900px) {
+    #myself ul li {
+        padding: 10px 30px;
+    }
+    #piyushimg {
+        width: 45%;
+        margin: 0%;
+    }
+}
+@media screen and (max-width:700px) {
+    #myself ul li {
+        padding: 10px 20px;
+    }
+}
+@media screen and (max-width:500px) {
+    #myself ul li {
+        padding: 10px;
+    }
+}
+@media screen and (max-width:350px) {
+    #hamburger {
+        display: none;
+    }
+    nav {
+        flex-direction: column;
+    }
+    #logo {
+        width: 100%;
+    }
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+    }
+    nav ul li {
+        margin: 10px;
+    }
+    nav ul.ham_active {
+        top:113.2px;
+        margin: 0%;
+    }
+    section {
+        flex-direction: column;
+        justify-content: center;
+    }
+    #myself {
+        margin: 50px 0px;
+        width: 100%;
+    }
+    #piyushimg {
+        width: 100%;
+    }
+    footer {
+        margin-top: 50px;
+    }
+}
+@media screen and (max-width:300px) {
+    #piyushimg {
+        height: 55vh;
+    }
+}
+@media screen and (max-width:200px) {
+    #hamburger {
+        display: none;
+    }
+    nav {
+        flex-direction: column;
+    }
+    #logo {
+        width: 100%;
+    }
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+    }
+    nav ul li {
+        margin: 10px;
+    }
+    nav ul.ham_active {
+        top:113.2px;
+        margin: 0%;
+        gap: 0px;
+    }
+    #piyushimg {
+        height: 40vh;
+    }
+}
